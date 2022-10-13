@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container w-2/5">
+    <items-list />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import LiItem from "@/components/LiItem";
+import ItemsList from "@/components/ItemsList";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ItemsList
+  },
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background-color: rgb(241 245 249);
+  padding: 20px;
 }
 </style>
